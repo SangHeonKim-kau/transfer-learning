@@ -34,7 +34,7 @@ NB_IV3_LAYERS_TO_FREEZE = 172  # 冻结层的数量
 train_dir = './emotion_data/fer2013/train'  # 训练集数据
 val_dir = './emotion_data/fer2013/validation' # 验证集数据
 nb_classes= 7
-nb_epoch = 1000
+nb_epoch = 10
 batch_size = 32
 
 nb_train_samples = get_nb_files(train_dir)      # 训练样本个数
