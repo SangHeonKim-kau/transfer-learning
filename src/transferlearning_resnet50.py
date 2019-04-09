@@ -27,7 +27,7 @@ test_data=torchvision.datasets.ImageFolder('./emotion/val',
                             transforms.CenterCrop(224),
                             transforms.ToTensor(),
                             transforms.Normalize([0.485, 0.456, 0.406],[0.229, 0.224, 0.225])]))
-test_loader=DataLoader(test_data,batch_size=64,shuffle=True)
+test_loader=DataLoader(test_data,batch_size=128,shuffle=True)
  
 # prepare model
 mode1_ft_res50=torchvision.models.resnet50(pretrained=True)
