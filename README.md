@@ -7,3 +7,5 @@ Download fer2013 and transter(see my github for trans) it to img
 place it in emotion_data files
 
 数据要做清洗：face detect->face alignment->classification
+
+此训练用到了tensorboardX将训练可视化
