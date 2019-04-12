@@ -43,7 +43,7 @@ mode1_ft_res50 = mode1_ft_res50.to(device=my_device)
 #loss function and optimizer
 criterion=torch.nn.CrossEntropyLoss()
 #parameters only train the last fc layer
-optimizer=torch.optim.Adam(mode1_ft_res50.fc.parameters(),lr=0.01)
+optimizer=torch.optim.Adam(mode1_ft_res50.fc.parameters(),lr=0.01，weight_decay=1e-3)
  
 #start train
 #label  not  one-hot encoder
