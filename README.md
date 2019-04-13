@@ -9,3 +9,5 @@ place it in emotion_data files
 数据要做清洗：face detect->face alignment->classification
 
 此训练用到了tensorboardX将训练可视化
+
+由于resnet18计算量较大，接下来换网络模型为mobilenet 或者shufflenetv2，再将bn层和卷积层融合，进一步提高推断时的效率
