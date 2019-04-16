@@ -52,7 +52,8 @@ MobileNetV2 = net.to(device=my_device)
 criterion=torch.nn.CrossEntropyLoss()
 #criterion=torch.nn.NLLLoss()
 #parameters only train the last fc layer
-optimizer=torch.optim.Adam(MobileNetV2.parameters(),lr=0.001,weight_decay=1e-2)
+#optimizer=torch.optim.Adam(MobileNetV2.parameters(),lr=0.001,weight_decay=1e-2)
+optimizer=torch.optim.AdaBound(MobileNetV2.parameters(), lr=1e-3, final_lr=0.1)
 #print(MobileNetV2) 
 #start train
 #label  not  one-hot encoder
