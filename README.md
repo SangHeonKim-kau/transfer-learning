@@ -14,3 +14,7 @@ place it in emotion_data files
 
 MobileNet-V1 最大的特点就是采用depth-wise separable convolution来减少运算量以及参数量，而在网络结构上，没有采用shortcut的方式。
 Resnet及Densenet等一系列采用shortcut的网络的成功，表明了shortcut是个非常好的东西，于是MobileNet-V2就将这个好东西拿来用
+
+对于炼丹师来说，针对任务调整网络结构或者在做模型精简的时候，尤其是对模型的速度有要求的时候，
+
+都想知道新模型的运算量有多大
