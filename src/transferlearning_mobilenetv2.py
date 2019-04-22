@@ -49,7 +49,7 @@ MobileNetV2 = net.to(device=my_device)
 
 
 #loss function and optimizer#
-criterion=torch.nn.CrossEntropyLoss()
+criterion=torch.nn.CrossEntropyLoss() #MultiMarginLoss() also works
 #criterion=torch.nn.NLLLoss()
 #parameters only train the last fc layer
 #optimizer=torch.optim.Adam(MobileNetV2.parameters(),lr=0.001,weight_decay=1e-2)
